@@ -36,7 +36,7 @@ Ca³kowicie nowa implementacja pinga z wieloma nowymi mo¿liwo¶ciami.
 %setup -q -c ping
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS -D_BSD_SOURCE" LDFLAGS="-s"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -D_BSD_SOURCE" LDFLAGS="-s"
 
 %install
 rm -rf $RPM_BUILD_ROOT
