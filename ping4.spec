@@ -11,14 +11,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A completely new version of good old 'ping'. New features are:
- - Redesign for proper flood and cisco style ping handling.
+ - Redesign for proper flood and Cisco style ping handling.
  - Packet loss is now properly reported in all modes.
  - Support for loose source route option besides record route.
  - Quick ping without normal output, quit when target is alive.
  - Option to probe all addresses of multi-homed destinations.
  - Support for pinging to broadcast address.
  - Portability hooks for easy installation on various platforms.
- - Recognize various new icmp packet types and subcodes.
+ - Recognize various new ICMP packet types and subcodes.
  - Recognize bounce messages to our own ping requests.
  - Round-trip time reporting in fractional milliseconds.
  - Display rtt standard deviation in statistics summary.
@@ -26,12 +26,34 @@ A completely new version of good old 'ping'. New features are:
  - Auto-adjust timeout period to cope with slow links.
  - Multiple gateways to define explicit loose source route.
  - Define explicit source address for multi-homed hosts.
- - Option to set an explicit TOS value in the IP header. Contains a
-   patch for making ip route recording work in case you have a SUN with
-   an NC400 ethernet controller.
+ - Option to set an explicit TOS value in the IP header.
+
+Contains a patch for making IP route recording work in case you have a
+SUN with an NC400 ethernet controller.
 
 %description -l pl
 Ca³kowicie nowa implementacja pinga z wieloma nowymi mo¿liwo¶ciami.
+Obejmuj± one:
+ - przeprojektowanie w celu poprawnej obs³ugi pinga typu flood i Cisco
+ - poprawne raportowanie strat pakietów we wszystkich trybach
+ - obs³uga opcji swobodnego routingu ¼ród³owego oprócz ustalonego
+ - szybki ping bez normalnego wyj¶cia, zakoñczenie pracy je¶li host
+   docelowy odpowie
+ - opcja do sprawdzania wszystkich adresów hostów o wielu adresach
+ - obs³uga pingowania adresów broadcast
+ - ³atwa instalacja na wielu platformach
+ - rozpoznawanie wielu nowych rodzajów i podkodów pakietów ICMP
+ - rozpoznawanie komunikatów o odbiciach na w³asne ¿±dania ping
+ - raportowanie czasu podró¿y w u³amkach milisekund
+ - wy¶wietlanie standardowego odchylenia czasu podró¿y w statystykach
+ - buforowanie zapytañ do serwera nazw w celu minimalizacji ich liczby
+ - automatyczne dostrajanie limitu czasu w celu zwalczenia wolnych
+   ³±cz
+ - wiele bramek przy definiowaniu swobodnego routingu ¼ród³owego
+ - opcja do ustawiania warto¶ci TOS w nag³ówku IP.
+
+Zawiera ³atê umo¿liwiaj±c± dzia³anie zachowywania tras IP w przypadku
+maszyn Sun z kart± sieciow± NC400.
 
 %prep
 %setup -q -c ping
