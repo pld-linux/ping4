@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	ftp://ftp.nikhef.nl/pub/network/ping_%{version}.tar.Z
+# Source0-md5:	1d50747f7e0eb39a351d970772207cb4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
