@@ -37,13 +37,15 @@ Ca³kowicie nowa implementacja pinga z wieloma nowymi mo¿liwo¶ciami.
 %setup -q -c ping
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -D_BSD_SOURCE" LDFLAGS="%{rpmldflags}"
+%{__make} \
+	CFLAGS="%{rpmcflags} -D_BSD_SOURCE" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_bindir}
+install -d $RPM_BUILD_ROOT%{_bindir}
 
-install ping $RPM_BUILD_ROOT/%{_bindir}/ping4
+install ping $RPM_BUILD_ROOT%{_bindir}/ping4
 
 %clean
 rm -rf $RPM_BUILD_ROOT
