@@ -1,9 +1,11 @@
 Summary:	ping program
+Summary(pl):	Program ping
 Name:		ping4
 Version:	990522
 Release:	1
 License:	GPL
 Group:		Applications/Networking
+Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
 Source0:	ftp://ftp.nikhef.nl/pub/network/ping_%{version}.tar.Z
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,7 +38,7 @@ Ca³kowicie nowa implementacja pinga z wieloma nowymi mo¿liwo¶ciami.
 %setup -q -c ping
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS -D_BSD_SOURCE" LDFLAGS="-s"
+%{__make} CFLAGS="%{rpmcflags} -D_BSD_SOURCE" LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -49,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(4755,root,root)%{_bindir}/ping4
+%attr(4754,root,icmp) %{_bindir}/ping4
