@@ -6,7 +6,7 @@ Copyright:	GPL
 Group:		Applications/Networking
 Group(pl):	Aplikacje/Sieciowe
 Source0:	ftp://ftp.nikhef.nl/pub/network/ping_%{version}.tar.Z
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A completely new version of good old 'ping'. New features are:
