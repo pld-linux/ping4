@@ -50,7 +50,3 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(640,root,root,755)
 %attr(4711,root,root)%{_bindir}/ping4
-
-%changelog
-* Fri May 28 1999 Arkadiusz Mi¶kiewicz <misiek@pld.org.pl>
-- initial version  
