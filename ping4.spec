@@ -60,6 +60,7 @@ maszyn Sun z kart± sieciow± NC400.
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -D_BSD_SOURCE" \
 	LDFLAGS="%{rpmldflags}"
 
@@ -74,4 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc RELEASE_NOTES
 %attr(4754,root,icmp) %{_bindir}/ping4
