@@ -1,5 +1,5 @@
 Summary:	ping program
-Summary(pl):	Program ping
+Summary(pl.UTF-8):   Program ping
 Name:		ping4
 Version:	990522
 Release:	1
@@ -31,29 +31,29 @@ A completely new version of good old 'ping'. New features are:
 Contains a patch for making IP route recording work in case you have a
 SUN with an NC400 ethernet controller.
 
-%description -l pl
-Ca≥kowicie nowa implementacja pinga z wieloma nowymi moøliwo∂ciami.
-Obejmuj± one:
-- przeprojektowanie w celu poprawnej obs≥ugi pinga typu flood i Cisco
-- poprawne raportowanie strat pakietÛw we wszystkich trybach
-- obs≥uga opcji swobodnego routingu ºrÛd≥owego oprÛcz ustalonego
-- szybki ping bez normalnego wyj∂cia, zakoÒczenie pracy je∂li host
+%description -l pl.UTF-8
+Ca≈Çkowicie nowa implementacja pinga z wieloma nowymi mo≈ºliwo≈õciami.
+ObejmujƒÖ one:
+- przeprojektowanie w celu poprawnej obs≈Çugi pinga typu flood i Cisco
+- poprawne raportowanie strat pakiet√≥w we wszystkich trybach
+- obs≈Çuga opcji swobodnego routingu ≈∫r√≥d≈Çowego opr√≥cz ustalonego
+- szybki ping bez normalnego wyj≈õcia, zako≈Ñczenie pracy je≈õli host
   docelowy odpowie
-- opcja do sprawdzania wszystkich adresÛw hostÛw o wielu adresach
-- obs≥uga pingowania adresÛw broadcast
-- ≥atwa instalacja na wielu platformach
-- rozpoznawanie wielu nowych rodzajÛw i podkodÛw pakietÛw ICMP
-- rozpoznawanie komunikatÛw o odbiciach na w≥asne ø±dania ping
-- raportowanie czasu podrÛøy w u≥amkach milisekund
-- wy∂wietlanie standardowego odchylenia czasu podrÛøy w statystykach
-- buforowanie zapytaÒ do serwera nazw w celu minimalizacji ich liczby
+- opcja do sprawdzania wszystkich adres√≥w host√≥w o wielu adresach
+- obs≈Çuga pingowania adres√≥w broadcast
+- ≈Çatwa instalacja na wielu platformach
+- rozpoznawanie wielu nowych rodzaj√≥w i podkod√≥w pakiet√≥w ICMP
+- rozpoznawanie komunikat√≥w o odbiciach na w≈Çasne ≈ºƒÖdania ping
+- raportowanie czasu podr√≥≈ºy w u≈Çamkach milisekund
+- wy≈õwietlanie standardowego odchylenia czasu podr√≥≈ºy w statystykach
+- buforowanie zapyta≈Ñ do serwera nazw w celu minimalizacji ich liczby
 - automatyczne dostrajanie limitu czasu w celu zwalczenia wolnych
-  ≥±cz
-- wiele bramek przy definiowaniu swobodnego routingu ºrÛd≥owego
-- opcja do ustawiania warto∂ci TOS w nag≥Ûwku IP.
+  ≈ÇƒÖcz
+- wiele bramek przy definiowaniu swobodnego routingu ≈∫r√≥d≈Çowego
+- opcja do ustawiania warto≈õci TOS w nag≈Ç√≥wku IP.
 
-Zawiera ≥atÍ umoøliwiaj±c± dzia≥anie zachowywania tras IP w przypadku
-maszyn Sun z kart± sieciow± NC400.
+Zawiera ≈Çatƒô umo≈ºliwiajƒÖcƒÖ dzia≈Çanie zachowywania tras IP w przypadku
+maszyn Sun z kartƒÖ sieciowƒÖ NC400.
 
 %prep
 %setup -q -c ping
