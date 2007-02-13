@@ -1,5 +1,5 @@
 Summary:	ping program
-Summary(pl.UTF-8):   Program ping
+Summary(pl.UTF-8):	Program ping
 Name:		ping4
 Version:	990522
 Release:	1
